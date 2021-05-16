@@ -7,13 +7,13 @@
 Summary:	B::COW - additional B helpers to check COW status
 Summary(pl.UTF-8):	B::COW - dodatkowe funkcje pomocnicze B do sprawdzania stanu COW
 Name:		perl-B-COW
-Version:	0.003
-Release:	2
+Version:	0.004
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/B/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	7993aed7be7b894c4883e3ac54769b1d
+# Source0-md5:	a1ef8623a06ce9f6358674d7e604de1e
 URL:		https://metacpan.org/release/B-COW
 %if %{with tests}
 BuildRequires:	perl-Test-Simple
