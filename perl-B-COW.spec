@@ -1,22 +1,22 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	B
 %define		pnam	COW
 Summary:	B::COW - additional B helpers to check COW status
 Summary(pl.UTF-8):	B::COW - dodatkowe funkcje pomocnicze B do sprawdzania stanu COW
 Name:		perl-B-COW
-Version:	0.004
-Release:	3
+Version:	0.007
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/B/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a1ef8623a06ce9f6358674d7e604de1e
+# Source0-md5:	7afc46f19e6f906e2ba5769b21fca5ff
 URL:		https://metacpan.org/release/B-COW
 %if %{with tests}
-BuildRequires:	perl-Test-Simple
+BuildRequires:	perl-Test-Simple >= 0.88
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
