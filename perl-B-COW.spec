@@ -14,7 +14,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/B/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7afc46f19e6f906e2ba5769b21fca5ff
-URL:		https://metacpan.org/release/B-COW
+URL:		https://metacpan.org/dist/B-COW
 %if %{with tests}
 BuildRequires:	perl-Test-Simple >= 0.88
 %endif
